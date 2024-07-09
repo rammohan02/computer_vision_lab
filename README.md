@@ -49,3 +49,6 @@ A score is derived based on the information from the above 2 results. The score 
 
 # Lab8:
 Face recognition using SIFT features.
+
+# Project:
+Refer [this](https://github.com/rammohan02/computer_vision_lab/blob/main/CVProject_Group4/ProjectDetails.txt)
