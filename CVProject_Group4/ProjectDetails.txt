@@ -1,0 +1,33 @@
+Team Members:
+Ram Mohan Kota                          - COE19B055 
+Jyothish Vallivedusudhakar         - COE19B025
+Kotamarthi Mohan Himanshu    - CED19I026
+
+
+Project Description:
+Fake Product Detection
+"Design and implementation of a mobile app to detect Fake Products”
+Our project which is a mobile app will identify the fake products. We need to install the app in our phone. Then, we will take a picture of a product and upload in the app (along with details like product name and company name). After uploading, the app will compare it with the images in our database. Then, it will give the result whether the product is original or fake.
+
+
+Innovation Work:
+In the process of comparing two products, many other factors may change the result. So, instead of directly going for comparison (SIFT based), we are doing “Background Removal” for both input and our standard images to avoid false detection which may result to unexpected results.
+
+
+Base Paper:
+	•In background removal, we are using predefined structured forest ML model to do edge detection, instead of normal edge detection to get more accurate results.
+	•Then, get an approximate contour of the object
+	•Then, we will use OpenCV’s Graph Cut algorithm and the approximate contour to make a more accurate background and foreground differentiation.
+
+
+Pros and Cons:
+	•We are getting good results independent of different color product images.
+	•If background and product have same similarities like same color etc, then background removal won’t work effectively and we may not get correct result.
+
+
+Work Shared:
+Mostly, all 3 members did the opencv research part independently and tried different background removal methods and feature matching methods with various parameters. Frontend and backend part of app done by Himanshu. After trying different methods, we finally arrived with this final solution.
+
+GitHub links:
+https://github.com/TheOxFromOutOfTheBox/FakeProductDetection_Backend
+https://github.com/TheOxFromOutOfTheBox/CVFrontend

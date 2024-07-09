@@ -1,0 +1,26 @@
+Open two command prompts
+One for FakeProductDetection_Backend-main
+another for CVFrontend-main
+
+For backend: (in command prompt - go to folder FakeProductDetection_Backend-main)
+0-Extract the model from zip
+1-python -m env venv
+2-source env/bin/activate (Mac/Linux) 	env/Scripts/activate.ps1 (Windows-Powershell)
+3-pip install -r requirements.txt
+3-python manage.py runserver 0.0.0.0:8000
+
+
+For frontend: (in command prompt - goto filder CVFrontend-main)
+1-npm install --global yarn
+2-yarn
+2-Change ip to your ip address in axios(App.js)(line 152)
+3-expo start
+4-Open app using Expo go app by scanning QR code appearing in browser CLI(https://play.google.com/store/apps/details?id=host.exp.exponent&referrer=www)
+
+
+
+If it doesnot work delete the folder FakeProductDetection_Backend-main, CVFrontend-main and extract from the zips provided and run again 
+
+
+
+
